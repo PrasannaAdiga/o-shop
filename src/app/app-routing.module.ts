@@ -12,8 +12,36 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+    path: 'products',
+    loadChildren: () => import('./page/products/products.module').then( m => m.ProductsPageModule)
+  },
+  {
+    path: 'shopping-cart',
+    loadChildren: () => import('./page/shopping-cart/shopping-cart.module').then( m => m.ShoppingCartPageModule)
+  },
+  {
+    path: 'check-out',
+    loadChildren: () => import('./page/check-out/check-out.module').then( m => m.CheckOutPageModule)
+  },
+  {
+    path: 'order-success',
+    loadChildren: () => import('./page/order-success/order-success.module').then( m => m.OrderSuccessPageModule)
+  },
+  {
+    path: 'my/orders',
+    loadChildren: () => import('./page/my-orders/my-orders.module').then( m => m.MyOrdersPageModule)
+  },
+  {
+    path: 'admin/products',
+    loadChildren: () => import('./page/admin/admin-products/admin-products.module').then( m => m.AdminProductsPageModule)
+  },
+  {
+    path: 'admin/orders',
+    loadChildren: () => import('./page/admin/admin-orders/admin-orders.module').then( m => m.AdminOrdersPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./page/login/login.module').then( m => m.LoginPageModule)
   }
 ];
 

@@ -17,9 +17,29 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Shopping Cart',
+      url: '/shopping-cart',
+      icon: 'cart'
+    },
+    {
+      title: 'My Orders',
+      url: '/my/orders',
+      icon: 'basket'
+    },
+    {
+      title: 'Manage Orders',
+      url: '/admin/orders',
+      icon: 'reorder'
+    },
+    {
+      title: 'Manage Products',
+      url: '/admin/products',
+      icon: 'filing'
+    },
+    {
+      title: 'Logout',
+      url: '/admin/products',
+      icon: 'log-out'
     }
   ];
 
